@@ -1,1 +1,15 @@
 // Mixins in here
+
+.test-border() {
+  border: 1px solid red;
+}
+
+.dash() {
+  border-bottom: 2px dashed lightgrey;
+}
+
+.flex (@justify, @align) {
+  display: flex;
+  justify-content: @justify;
+  align-items: @align;
+}
