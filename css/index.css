@@ -135,6 +135,7 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  color: #212529;
 }
 h1,
 h2,
@@ -201,10 +202,10 @@ img {
   padding: 20px;
 }
 header {
-  border-bottom: 2px dashed lightgrey;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .intro-content {
-  border-bottom: 2px dashed lightgrey;
+  border-bottom: 2px dashed #C0C0C0;
   padding-bottom: 15px;
 }
 .home .intro-content h2 {
@@ -255,4 +256,17 @@ header {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+.home .content-pick .btn {
+  background-color: #17A2B8;
+  color: white;
+  border-radius: 13px;
+  font-size: 1.8rem;
+  border: none;
+  padding: 4%;
+  width: 80%;
+}
+.home .content-pick .btn:hover {
+  background-color: white;
+  color: #17A2B8;
 }

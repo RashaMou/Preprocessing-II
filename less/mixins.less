@@ -5,11 +5,25 @@
 }
 
 .dash() {
-  border-bottom: 2px dashed lightgrey;
+  border-bottom: 2px dashed @silver;
 }
 
 .flex (@justify, @align) {
   display: flex;
   justify-content: @justify;
   align-items: @align;
+}
+
+.btn-style (@bg-color, @font-color) {
+  background-color: @bg-color;
+  color: @font-color;
+  border-radius: 13px;
+  font-size: 1.8rem;
+  border: none;
+  padding: 4%;
+  width: 80%;
+  &:hover {
+    background-color: @font-color;
+    color: @bg-color;
+  }
 }
