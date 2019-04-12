@@ -193,6 +193,11 @@ img {
     padding-bottom: 10px;
   }
 }
+@media (max-width: 500px) {
+  .title-nav h1 {
+    padding-bottom: 7px;
+  }
+}
 .title-nav nav {
   display: flex;
   flex-direction: row;
