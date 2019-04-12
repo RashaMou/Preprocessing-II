@@ -203,19 +203,29 @@ img {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 40%;
+  width: 60%;
   font-size: 1.6rem;
   padding-right: 4%;
 }
 .title-nav nav a {
+  width: 100px;
   text-decoration: none;
   color: black;
+  transition-property: color, background-color;
+  transition-duration: 1s;
+  transition-timing-function: ease-out;
+  border: 5px solid transparent;
+  text-align: center;
 }
 .title-nav nav a:hover {
-  color: #17A2B8;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background-color: #17A2B8;
+  padding: 10px 5px;
+  border: none;
 }
 @media (max-width: 500px) {
-  .title-nav nav {
+  .title-nav nav a {
     width: 100%;
     justify-content: space-around;
     padding-top: 10px;

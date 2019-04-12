@@ -20,22 +20,32 @@
   
   nav {
     .flex (row, space-between, center);
-    width: 40%;
+    width: 60%;
     font-size: 1.6rem;
     padding-right: 4%;
     
     a {
+      width: 100px;
       text-decoration: none;
       color: black;
+      transition-property: color, background-color;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+      border: 5px solid transparent;
+      text-align: center;
       &:hover {
-        color: @eastern-blue;
+      border-radius: 8px;
+      color: @white;
+      background-color: @eastern-blue;
+      padding: 10px 5px;
+      border: none;
       }
-    }
 
-    @media @mobile {
-      width: 100%;
-      justify-content: space-around;
-      padding-top: 10px;
+      @media @mobile {
+        width: 100%;
+        justify-content: space-around;
+        padding-top: 10px;
+      }
     }
   }
 }
